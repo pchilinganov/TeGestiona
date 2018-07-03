@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+ >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_gravity="left"
+            android:textStyle="bold"
+            android:textColor="@color/bg_circle_blue"
+            android:textSize="20dp"
+            android:paddingBottom="@dimen/padding_between"
+            android:paddingTop="@dimen/padding_between"
+            android:layout_marginLeft="@dimen/activity_margenLateral_dialog_resContrasena_5p"
+            android:text="Top Consulta Tiendas"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/lblAnularPenalidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="14dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:paddingBottom="@dimen/padding_between"
+            android:text="texto1"
+            android:layout_marginLeft="@dimen/activity_margenLateral_dialog_resContrasena_5p"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/lblCancelacionOrdenes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="14dp"
+            android:text="texto2"
+            android:textColor="@color/colorPrimaryDark"
+            android:paddingBottom="@dimen/padding_between"
+            android:layout_marginLeft="@dimen/activity_margenLateral_dialog_resContrasena_5p"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/lblOrdenesSuspension"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="14dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:paddingBottom="@dimen/padding_between"
+            android:layout_marginLeft="@dimen/activity_margenLateral_dialog_resContrasena_5p"
+            android:text="texto3"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/lblAnulacionPenalidadSeguroPlanInteligente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="14dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:paddingBottom="@dimen/padding_between"
+            android:layout_marginLeft="@dimen/activity_margenLateral_dialog_resContrasena_5p"
+            android:text="texto5"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_gravity="left"
+            android:textColor="@color/bg_circle_blue"
+            android:textSize="20dp"
+            android:paddingBottom="@dimen/padding_between"
+            android:paddingTop="10dp"
+            android:layout_marginLeft="@dimen/activity_margenLateral_dialog_resContrasena_5p"
+            android:text="Guías de Uso"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/lblCartillaV2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="14dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:paddingBottom="@dimen/padding_between"
+            android:layout_marginLeft="@dimen/activity_margenLateral_dialog_resContrasena_5p"
+            android:text="texto6"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/lblGuiaRapidaUso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="14dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:paddingBottom="@dimen/padding_between"
+            android:layout_marginLeft="@dimen/activity_margenLateral_dialog_resContrasena_5p"
+            android:text="texto7"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/lblTitle3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_gravity="left"
+            android:textColor="@color/bg_circle_blue"
+            android:textSize="20dp"
+            android:visibility="gone"
+            android:paddingBottom="@dimen/padding_between"
+            android:paddingTop="10dp"
+            android:layout_marginLeft="@dimen/activity_margenLateral_dialog_resContrasena_5p"
+            android:text="Archivo Base de Errores"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/lblBaseErroresDelivery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="14dp"
+            android:text="texto8"
+            android:textColor="@color/colorPrimaryDark"
+            android:paddingBottom="@dimen/padding_between"
+            android:layout_marginLeft="@dimen/activity_margenLateral_dialog_resContrasena_5p"
+            android:visibility="gone"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+    </LinearLayout>
+    </ScrollView>

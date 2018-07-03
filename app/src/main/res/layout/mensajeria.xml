@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/eTEsribirMensaje"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Escribe un mensaje..."
+            android:theme="@style/MyEditTextTheme"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/bTenviarMensaje" />
+
+        <!--android:digits="0123456789ÁÉÍÓÚABCDEFGHIJKLMNÑOPQRSTVUWXYZáéíóúabcdefghijklmnñopqrstuvwxyz+-=?¿#;:''!¡_-@$*%(),./\{}[] "-->
+
+        <!--<ImageButton
+            android:id="@+id/imgBtnClip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/bTenviarMensaje"
+            android:layout_toRightOf="@+id/eTEsribirMensaje"
+            android:background="@color/bg_circle_default"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/paperclip"
+            android:visibility="visible"/>-->
+
+        <!--<Button
+            android:id="@+id/bTenviarMensaje"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:hint="Enviar"/>-->
+
+        <ImageButton
+            android:id="@+id/bTenviarMensaje"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/send"
+            android:background="@drawable/btn_background_send"
+            />
+
+        <!--<android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/appBarLayout"
+            android:theme="@style/AppTheme.AppBarOverlay">
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:navigationIcon="?attr/homeAsUpIndicator"
+                >
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Chat en línea"
+                    android:textSize="25dp"
+                    android:gravity="left"
+                    android:visibility="visible"/>
+
+                <EditText
+                    android:id="@+id/receptorET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.AppBarLayout>-->
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvMensajes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/card_view_mensajes"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_above="@+id/eTEsribirMensaje">
+        </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+</LinearLayout>

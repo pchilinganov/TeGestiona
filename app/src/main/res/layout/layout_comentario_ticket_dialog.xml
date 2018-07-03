@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:theme="@style/CustomDialogTheme"
+    >
+
+    <TextView
+        android:id="@+id/info_head_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_gravity="left"
+        android:textColor="@color/colorWhite"
+        android:textSize="20dp"
+        android:paddingBottom="@dimen/padding_between"
+        android:paddingTop="@dimen/padding_between"
+        android:layout_marginLeft="@dimen/activity_margenLateral_dialog_resContrasena_5p"
+        android:visibility="gone"
+        android:text="TGESTIONA"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/lblTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="@dimen/padding_between"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="@color/bg_circle_blue"
+        android:paddingBottom="@dimen/padding_between"
+        android:layout_marginLeft="20dp"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tilComentario"
+        android:paddingBottom="@dimen/padding_between"
+        android:paddingTop="@dimen/padding_between">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtComentario"
+            android:hint="Ingrese Comentario"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:visibility="visible"/>
+    </android.support.design.widget.TextInputLayout>
+</LinearLayout>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "575552770052",
+    "firebase_url": "https://chattest-49ca8.firebaseio.com",
+    "project_id": "chattest-49ca8",
+    "storage_bucket": "chattest-49ca8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:575552770052:android:e57ecb842a22c440",
+        "android_client_info": {
+          "package_name": "chat.atc.tges.tgeschat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "575552770052-ceg7leo20i7ucqfgvilipkd1u3lla75h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhCBq9BvlGNEYF3wSPzMFThV_gXxFJh18"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

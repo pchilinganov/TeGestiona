@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/row_padding"
+    android:paddingLeft="@dimen/general_padding"
+    android:paddingRight="@dimen/general_padding"
+    android:paddingTop="@dimen/row_padding">
+
+    <TextView
+        android:id="@+id/txtCuerpo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="@dimen/row_padding" />
+
+    <!--<TextView
+        android:id="@+id/txtCuerpo2"
+        android:textColor="@color/colorBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/txtCuerpo1"
+
+         />
+
+    <TextView
+        android:id="@+id/txtMotivo"
+        android:textColor="@color/colorBlack"
+        style="@style/RowTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/txtCuerpo2"
+
+        />
+
+    <TextView
+        android:id="@+id/txtTicketDoit"
+        android:textColor="@color/colorBlack"
+        style="@style/RowTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/txtMotivo"
+
+        />
+
+    <TextView
+        android:id="@+id/txtCuerpo3"
+        android:textColor="@color/colorBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/txtTicketDoit"
+
+       />-->
+
+
+    <!--android:layout_toEndOf="@+id/circleView"
+        android:layout_toRightOf="@+id/circleView"-->
+
+</RelativeLayout>

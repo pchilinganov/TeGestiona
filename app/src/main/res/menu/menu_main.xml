@@ -1,0 +1,52 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+     >
+
+    <item android:id="@+id/action_BandejaTickets"
+        android:title="@string/bandejaChat"
+        android:icon="@drawable/email"
+        android:orderInCategory="100"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/action_Adjuntar"
+        android:title="@string/msgAdjuntar"
+        android:icon="@drawable/paperclip_img"
+        android:orderInCategory="100"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/action_NuevoChat"
+        android:title="@string/msgNuevoChat"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_Notificaciones"
+        android:title="@string/msgNotificaciones"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_Descargas"
+        android:title="@string/msgDescargas"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <!--<item android:id="@+id/action_GuiasUso"
+        android:title="@string/msgGuiasdeUso"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_ArchivosBaseErrores"
+        android:title="@string/msgArchivoBaseErrores"
+        android:orderInCategory="100"
+        app:showAsAction="never" />-->
+
+    <item android:id="@+id/action_CerrarSesion"
+        android:title="@string/msgCerrarSesion"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    <!--<item android:id="@+id/action_Test"
+        android:title="@string/msgTest"
+        android:orderInCategory="100"
+        app:showAsAction="never" />-->
+
+</menu>

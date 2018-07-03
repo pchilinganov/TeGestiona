@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/lblTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:textSize="20dp"
+        android:textColor="@color/bg_circle_blue"
+        android:text="AYÚDANOS A MEJORAR"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/lblTitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:textColor="@color/colorBlack"
+        android:text="¿Cómo calificarías la atención?"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="4dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnMuyBueno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/btn_background"
+                android:src="@drawable/muy_bueno" />
+
+            <ImageButton
+                android:id="@+id/btnBueno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/btn_background"
+                android:src="@drawable/bueno" />
+
+            <ImageButton
+                android:id="@+id/btnRegular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/btn_background"
+                android:src="@drawable/regular" />
+
+            <ImageButton
+                android:id="@+id/btnMalo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_alignTop="@+id/btnMuyBueno"
+                android:background="@drawable/btn_background"
+                android:src="@drawable/malo" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvMuyBueno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:text="Muy bueno" />
+
+            <TextView
+                android:id="@+id/tvBueno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:text="Bueno" />
+
+            <TextView
+                android:id="@+id/tvRegular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:text="Regular" />
+
+            <TextView
+                android:id="@+id/tvMalo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:text="Malo"
+                android:src="@drawable/malo" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

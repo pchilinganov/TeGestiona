@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:theme="@style/CustomDialogRestablecerContraseniaTheme"
+    >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <!--<TextView
+            android:id="@+id/info_head_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textColor="@color/colorGray"
+            android:textSize="20dp"
+            android:paddingBottom="@dimen/padding_between"
+            android:paddingTop="@dimen/padding_between"
+            android:layout_marginLeft="@dimen/activity_margenLateral_dialog_resContrasena_5p"
+            android:text="TGESTIONA"
+            android:textAppearance="?android:attr/textAppearanceSmall" /> -->
+
+        <TextView
+            android:id="@+id/lblTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:paddingBottom="@dimen/padding_between"
+            android:text="Cambio de Contraseña"
+
+
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tilUsuario"
+            android:layout_marginTop="5dp"
+            android:textColorHint="@color/colorGray"
+            app:backgroundTint="@color/colorGray">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtUsuario"
+                android:hint="Usuario"
+                android:digits="0123456789ABCDEFGHIJKLMNOPQRSTVUWXYZabcdefghijklmnopqrstuvwxyz.-,"
+                android:layout_marginLeft="@dimen/activity_margenLateral_dialog_resContrasena_5p"
+                app:backgroundTint="@color/colorGray"
+
+                android:layout_marginRight="@dimen/activity_margenLateral_dialog_resContrasena_5p"
+                android:visibility="visible"/>
+        </android.support.design.widget.TextInputLayout>
+        <!--app:backgroundTint="@color/colorGray"
+                android:textColorHint="@color/colorWhite"
+                android:shadowColor="@color/colorWhite"
+                android:textColorHighlight="@color/colorWhite"-->
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tilEmail"
+            app:backgroundTint="@color/colorGray"
+            android:layout_marginTop="5dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtEmail"
+                android:hint="Email"
+                app:backgroundTint="@color/colorGray"
+                android:digits="0123456789ABCDEFGHIJKLMNOPQRSTVUWXYZabcdefghijklmnopqrstuvwxyz.@,-_"
+                android:layout_marginLeft="@dimen/activity_margenLateral_dialog_resContrasena_5p"
+                android:layout_marginRight="@dimen/activity_margenLateral_dialog_resContrasena_5p"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tilCodValidacion"
+            android:visibility="gone"
+            android:layout_marginTop="10dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtCodigoValidacion"
+                android:layout_marginLeft="@dimen/activity_margenLateral_dialog_resContrasena_5p"
+                android:layout_marginRight="@dimen/activity_margenLateral_dialog_resContrasena_5p"
+                android:hint="Código Validación"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <View
+            android:id="@+id/separator"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="2dp"
+            android:layout_marginLeft="@dimen/activity_margenLateral_dialog_resContrasena_5p"
+            android:layout_marginRight="@dimen/activity_margenLateral_dialog_resContrasena_5p"
+            android:background="@drawable/separador"
+            android:visibility="gone"
+            />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tilContrasenaActual"
+            android:layout_marginTop="10dp"
+            android:visibility="gone">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtContrasenaActual"
+                android:digits="0123456789ABCDEFGHIJKLMNOPQRSTVUWXYZabcdefghijklmnopqrstuvwxyz.,-_!#$%/()="
+                android:hint=""
+                android:inputType="textPassword"
+                android:layout_marginLeft="@dimen/activity_margenLateral_dialog_resContrasena_5p"
+                android:layout_marginRight="@dimen/activity_margenLateral_dialog_resContrasena_5p"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tilContrasena_Actual_Nueva"
+            android:layout_marginTop="10dp"
+            android:visibility="gone">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtContrasena_Actual_Nueva"
+                android:digits="0123456789ABCDEFGHIJKLMNOPQRSTVUWXYZabcdefghijklmnopqrstuvwxyz.,-_!#$%/()="
+                android:hint=""
+                android:inputType="textPassword"
+                android:layout_marginLeft="@dimen/activity_margenLateral_dialog_resContrasena_5p"
+                android:layout_marginRight="@dimen/activity_margenLateral_dialog_resContrasena_5p"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnOculto"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:padding="10dp"
+            android:layout_marginLeft="@dimen/activity_margenLateral_portrait_resContrasena_5p"
+            android:layout_marginRight="@dimen/activity_margenLateral_portrait_resContrasena_5p"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/botonpulsado_dialog"
+            android:textColor="@color/colorPrimary"
+            android:visibility="invisible"
+            android:text="VALIDAR" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tilContrasenaNew"
+            android:visibility="gone"
+            android:layout_marginTop="8dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtContrasenaNew"
+                android:inputType="textPassword"
+                android:hint="Confirmar Contraseña"
+                android:digits="0123456789ABCDEFGHIJKLMNOPQRSTVUWXYZabcdefghijklmnopqrstuvwxyz.,-_!#$%/()="
+                android:layout_marginLeft="@dimen/activity_margenLateral_dialog_resContrasena_5p"
+                android:layout_marginRight="@dimen/activity_margenLateral_dialog_resContrasena_5p"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tilEmailNew"
+            android:visibility="gone"
+            android:layout_marginTop="8dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtEmailNew"
+                android:hint="Ingresar Email"
+                android:digits="0123456789ABCDEFGHIJKLMNOPQRSTVUWXYZabcdefghijklmnopqrstuvwxyz.@-_"
+                android:layout_marginLeft="@dimen/activity_margenLateral_dialog_resContrasena_5p"
+                android:layout_marginRight="@dimen/activity_margenLateral_dialog_resContrasena_5p"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/btnRestablecerContrasena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+
+            android:background="@drawable/botonpulsado_dialog"
+            android:textColor="@color/colorWhite"
+            android:layout_marginLeft="@dimen/activity_margenLateral_dialog_resContrasena_5p"
+            android:layout_marginRight="@dimen/activity_margenLateral_dialog_resContrasena_5p"
+            android:text="ACEPTAR"
+            />
+    </LinearLayout>
+</ScrollView>

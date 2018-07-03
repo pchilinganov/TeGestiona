@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:layout_gravity="center_vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorFondoLogin"
+    xmlns:pixlui="http://schemas.android.com/apk/com.neopixl.pixlui">
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_margenLateral_landscape_login_5p"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_vertical"
+
+        android:layout_marginBottom="20dp">
+
+        <!-- 0,1,2 Fila -->
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+
+            android:src="@mipmap/logo_ma" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <!-- Fila 1 | Columna 1 -->
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/txtUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/activity_margenLateral_landscape_login_5p"
+            android:layout_marginLeft="@dimen/activity_margenLateral_landscape_login_5p"
+            android:textColorHint="@color/colorWhite"
+            android:textColor="@color/colorWhite"
+            android:hint="Usuario"
+            android:digits="0123456789ABCDEFGHIJKLMNOPQRSTVUWXYZabcdefghijklmnopqrstuvwxyz"
+            app:backgroundTint="@color/colorWhite"
+            >
+            <requestFocus />
+        </android.support.v7.widget.AppCompatEditText>
+        <!-- Fila 2 | Columna 1 -->
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/txtContrasenia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="@dimen/activity_margenLateral_landscape_login_5p"
+            android:layout_marginLeft="@dimen/activity_margenLateral_landscape_login_5p"
+            android:layout_marginTop="-1dp"
+            android:textColor="@color/colorWhite"
+            android:hint="Contraseña"
+            android:textColorHint="@color/colorWhite"
+            android:shadowColor="@color/colorWhite"
+            android:inputType="textPassword"
+            android:digits="0123456789ABCDEFGHIJKLMNOPQRSTVUWXYZabcdefghijklmnopqrstuvwxyz"
+            app:backgroundTint="@color/colorWhite"
+            />
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginRight="@dimen/activity_margenLateral_landscape_login_5p"
+            android:layout_marginLeft="@dimen/activity_margenLateral_landscape_login_5p"
+            android:layout_marginTop="-1dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/botonpulsado_dialog"
+            android:textColor="@color/colorWhite"
+            android:text="ACCEDER"></Button>
+        <!-- android:background="@drawable/edittext_top_curv_gray" -->
+        <TextView
+            android:id="@+id/lblRecordarContrasena"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorWhite"
+            android:text="¿Olvidaste tu contraseña?"
+            />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MovistarTAyuda</string>
+    <string name="bandejaChat">Bandeja</string>
+    <string name="msgCerrarSesion">Cerrar Sesión</string>
+    <string name="msgNotificaciones">Notificaciones</string>
+    <string name="msgDescargas">Descargas</string>
+    <string name="msgGuiasdeUso">Guias de Uso</string>
+    <string name="msgArchivoBaseErrores">Archivo Base Errores</string>
+    <string name="msgTest">Test</string>
+    <string name="msgNuevoChat">Nuevo Chat</string>
+    <string name="msgAdjuntar">Adjuntar</string>
+    <string name="action_search">Buscar</string>
+    <string name="action_delete">Eliminar</string>
+    <string name="search_hint">Nro Ticket, Tipo, Nro Consulta</string>
+</resources>

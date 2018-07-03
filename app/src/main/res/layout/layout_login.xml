@@ -1,0 +1,107 @@
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/colorPrimary">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_centerInParent="true"
+            android:paddingTop="70dp"
+            android:paddingBottom="10dp"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/activity_margenLateral_portrait_login_5p"
+                android:layout_marginRight="@dimen/activity_margenLateral_portrait_login_5p"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="30dp"
+                android:src="@drawable/logo_ma" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/txtUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_margenLateral_portrait_login_5p"
+                android:layout_marginRight="@dimen/activity_margenLateral_portrait_login_5p"
+                android:textColorHint="@color/colorWhite"
+                android:textColor="@color/colorWhite"
+
+                android:hint="Usuario"
+                android:text=""
+                app:backgroundTint="@color/colorWhite"
+                android:digits="0123456789ABCDEFGHIJKLMNOPQRSTVUWXYZabcdefghijklmnopqrstuvwxyz">
+                <requestFocus />
+            </android.support.v7.widget.AppCompatEditText>
+            <!-- android:background="@drawable/edittext_top_curv_gray"
+            style="@style/EditTextStyle" -->
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/txtContrasenia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="@dimen/activity_margenLateral_portrait_login_5p"
+                android:layout_marginRight="@dimen/activity_margenLateral_portrait_login_5p"
+                android:layout_marginTop="-1dp"
+                android:textColor="@color/colorWhite"
+
+                android:hint="Contraseña"
+                android:text=""
+                android:textColorHint="@color/colorWhite"
+                android:shadowColor="@color/colorWhite"
+                android:inputType="textPassword"
+                android:digits="0123456789ABCDEFGHIJKLMNÑOPQRSTVUWXYZabcdefghijklmnñopqrstuvwxyz"
+                app:backgroundTint="@color/colorWhite"
+                />
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="@dimen/activity_margenLateral_portrait_login_5p"
+                android:layout_marginRight="@dimen/activity_margenLateral_portrait_login_5p"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/botonpulsado_general"
+
+                android:textColor="@color/colorWhite"
+                android:text="INGRESAR" />
+            <!-- android:background="@drawable/edittext_top_curv_gray" -->
+            <TextView
+                android:id="@+id/lblRecordarContrasena"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/colorWhite"
+                android:text="¿Olvidaste tu contraseña?" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="@dimen/activity_margenLateral_portrait_login_5p"
+                android:layout_marginRight="@dimen/activity_margenLateral_portrait_login_5p"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="10dp"
+
+                android:src="@drawable/logo_telefonica" />
+        </LinearLayout>
+        <!--android:layout_marginBottom="20dp"-->
+
+    </RelativeLayout>
